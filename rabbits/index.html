@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scroll</title>
+    <style>
+      body {
+        background: black;
+        text-align: center;
+      }
+      button {
+        outline: none;
+        margin: 16px 0;
+        font-size: 38px;
+        background-color: tomato;
+        border-radius: 10px;
+        color: white;
+        cursor: pointer;
+      }
+      img {
+        display: block;
+        margin: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Find a Rabbit 🐇</button>
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/rabbit.png" alt="rabbit" id="rabbit" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <img src="/img/carrot.png" alt="carrot" id="carrot" />
+    <script>
+      const button = document.querySelector('button');
+      const rabbit = document.querySelector('#rabbit');
+      button.addEventListener('click', () => {
+        rabbit.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      });
+    </script>
+  </body>
+</html>
