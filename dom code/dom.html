@@ -47,6 +47,14 @@
       // section.appendChild(h2)
       const h3 = document.querySelector('h3');
       section.insertBefore(h2, h3);
+
+      // 요런식으로도 추가가능하지만 나중에 수정할일이 있으면 않좋다
+      // section.innerHTML = `
+      // <img src="img/avatar.png" alt="avatar" />
+      // <h1 id="brand">Dream Coding</h1>
+      // `
+
+      section.removeChild(h2); // 요런식으로 삭제도 가능
     </script>
   </body>
 </html>
